@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OtherWidgetDemo.OtherWidget">
+    <ContentView.Content>
+        <StackLayout Orientation="Horizontal">
+            <Picker x:Name="picker" ItemsSource="{Binding Options}"
+                SelectedIndexChanged="picker_SelectedIndexChanged"
+                    WidthRequest="100"/>
+            <Entry x:Name="other" Text="{Binding OtherText}" WidthRequest="100"
+                   TextChanged="other_TextChanged" IsEnabled="False"/>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
