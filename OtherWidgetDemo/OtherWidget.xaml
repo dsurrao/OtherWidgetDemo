@@ -4,11 +4,11 @@
              x:Class="OtherWidgetDemo.OtherWidget">
     <ContentView.Content>
         <StackLayout Orientation="Horizontal">
-            <Picker x:Name="picker" ItemsSource="{Binding Options}"
-                SelectedIndexChanged="picker_SelectedIndexChanged"
-                    WidthRequest="100"/>
-            <Entry x:Name="other" Text="{Binding OtherText}" WidthRequest="100"
-                   TextChanged="other_TextChanged" IsEnabled="False"/>
+            <Picker ItemsSource="{Binding Options}"
+                    SelectedIndexChanged="picker_SelectedIndexChanged" WidthRequest="100"/>
+            <Entry x:Name="other" TextChanged="other_TextChanged"
+                    IsEnabled="False" WidthRequest="100"/>
         </StackLayout>
+
     </ContentView.Content>
 </ContentView>

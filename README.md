@@ -1,11 +1,10 @@
 # OtherWidgetDemo
 
-A reusable Picker widget that allows a text entry option if "Other" is selected. The resulting selection can be bound to in the parent control like this:
+A reusable Picker widget that allows a text entry option if "Other" is selected. The resulting selection can be bound to a view model property:
 
 ```
-<controls:OtherWidget x:Name="optionWidget1"/>
-<Label BindingContext="{x:Reference optionWidget1}"
-                   Text="{Binding SelectedOption}"/>
+<controls:OtherWidget Options="{Binding Options}"
+	SelectedOption="{Binding SelectedOption}"/>
 ```
 # OtherWidgetDemo
 

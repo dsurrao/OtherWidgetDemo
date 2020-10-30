@@ -13,22 +13,20 @@ namespace OtherWidgetDemo
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        MainPageViewModel _vm;
+
         public MainPage()
         {
             InitializeComponent();
 
-            this.BindingContext = this;
+            _vm = new MainPageViewModel();
+
+            this.BindingContext = _vm;
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
-
-            optionWidget1.Options = new List<string> { "Mon", "Tue", "Wed",
-                "Other" };
-
-            optionWidget2.Options = new List<string> { "Jan", "Feb", "Mar",
-                "Other" };
         }
     }    
 }
