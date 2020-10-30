@@ -9,4 +9,4 @@ A reusable Picker widget that allows a text entry option if "Other" is selected.
 ```
 # OtherWidgetDemo
 
-![Screenshot](https://github.com/dsurrao/OtherWidgetDemo/blob/main/demo_screenshot.png)
+![Screenshot](https://github.com/dsurrao/OtherWidgetDemo/blob/main/demo_screenshot.png =100x)
