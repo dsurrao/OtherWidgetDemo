@@ -8,3 +8,5 @@ A reusable Picker widget that allows a text entry option if "Other" is selected.
                    Text="{Binding SelectedOption}"/>
 ```
 # OtherWidgetDemo
+
+![Screenshot](https://github.com/dsurrao/OtherWidgetDemo/blob/main/demo_screenshot.png)
